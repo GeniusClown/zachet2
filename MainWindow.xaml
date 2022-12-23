@@ -1,0 +1,27 @@
+﻿<Window x:Class="moiapyaterki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:moiapyaterki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Frame Grid.Column="1" Grid.Row="1" x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
+        </Grid>
+
+        <Button Width="100" Height="50" Margin="57,209,43,160" Content="Расписание" Click="Button_Click"></Button>
+        <Button Width="100" Height="50" Margin="58,281,42,88" Content="Замены" Click="Button_Click_1"></Button>
+        <Image Source="logo.jpg" VerticalAlignment="Top"></Image>
+        <TextBlock Grid.Column="1" FontSize="20" FontStyle="Italic" FontWeight="Bold">ГБПОУ МО Люберецкий техникум имени Героя Советского Союза лётчика-космонавта Ю. А. Гагарина, корпус Угреша</TextBlock>
+    </Grid>
+</Window>
